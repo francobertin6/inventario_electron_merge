@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/photon.min.css">
+    <!-- fuentes de texto -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>inventario_app</title>
+</head>
+<body id="body">
+    <header class="toolbar toolbar-header" id="header">
+        <input type="text" placeholder="busqueda" id="search_input" class="form-control">
+        <div class="toolbar-actions">
+            <button class="btn btn-default" id="agregar_productos_btn">Agregar productos</button>
+            <button class="btn btn-default" id="proveedores_btn">Proveedores</button>
+            <button class="btn btn-default">Ventas</button>
+            <button class="btn btn-default" id="reload_button"><span><img src="./icons/recargar.svg" alt="reload"></span></button>
+        </div>
+    </header>
+<section class="tabla">
+    <table class="table-striped" id="tabla">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Tipo</th>
+                <th>Color</th>
+                <th>Cantidad</th>
+                <th>Medida</th>
+                <th>Costo unitario</th>
+                <th>Costo total</th>
+                <th>Proveedor</th>
+                <th><span><img src="./icons/configuraciones.svg" alt="config"></span></th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+</section>
+    
+
+<script type="module">
+    require('./modulos_export_app/productos.js');
+</script> 
+<script id="last_element_script">
+    /*require("database_connection.js");*/
+</script>   
+</body>
+</html>

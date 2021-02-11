@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "styles/styles_proveedores.css">
+    <link rel="stylesheet" href="styles/photon.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+    <title>proveedores</title>
+</head>
+<body id="body">
+
+    <header class="toolbar toolbar-header" id="dropdown_header">
+            <div id="first_div" style="display: none;">
+                <label for="nombre">Nombre</label> <br>
+                <input type="text" name="nombre" id="nombre"> <br>
+
+                <label for="telefono">Telefono</label> <br>
+                <input type="number" name="telefono" id="telefono"> <br>
+
+                <label for="email">Email</label> <br>
+                <input type="email" name="email" id="email"> <br>
+            </div>
+            <div id="second_div" style="display: none;">
+                <label for="descripcion">Descripcion</label> <br>
+                <textarea name="descripcion" id="descripcion" cols="50" rows="5"></textarea> <br>
+
+                <button class="btn btn-positive" id="agregar_productos">Agregar proveedor</button>
+                <button class="btn btn-default" id="cancelar">Cancelar</button>
+            </div>
+
+            <div id="dropdown_key">
+                <span>Agregar proveedores</span>
+            </div>
+    </header>
+
+    <section id="proveedores_list">
+
+    </section>
+
+
+    <script>
+        require('./modulos_export_app/proveedores.js')
+    </script>
+    <script>
+        /*require("database_connection.js");*/
+    </script>
+</body>
+</html>

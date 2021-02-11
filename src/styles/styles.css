@@ -1,0 +1,352 @@
+#body{
+    background: rgb(226, 224, 218);
+}
+
+/* HEADER */
+
+#header{
+    height: 7vh;
+    position: relative;
+}
+
+#header .toolbar-actions{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 65%;
+}
+
+#header .toolbar-actions button{
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+}
+
+#header .toolbar-actions button span img{
+    width: 15px;
+    height: 15px;
+}
+
+/* header search_input */
+
+#header #search_input{
+    position: absolute;
+    left: 3%;
+    top: 25%;
+
+    height: 3vh;
+    width: 50vw;
+}
+
+#header #container_tag{
+    position: absolute;
+    top: 28%;
+    left: 37px;
+    border: 1px solid;
+    width: 7vw;
+    height: 3.2vh;
+    text-align: center;
+    background: darkgrey;
+}
+
+
+/* HEADER */
+
+/* TABLA */
+
+.tabla{
+    position: relative;
+    height: 80vh;
+    width: 87vw;
+
+    overflow-y: scroll;
+    scrollbar-track-color: transparent;
+
+    top: 5vh;
+    left: 2.5vw;
+    right: 2.5vw;
+}
+.tabla::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    
+} 
+.table-striped{
+    position: absolute;
+    width: max-content;
+}
+
+.table-striped thead tr{
+    display: grid;
+    grid-template-columns: 15vw 10vw 10vw 8vw 10vw 8vw 8vw 12vw 3vw;
+    border: solid grey ;
+    text-align: center;
+    font-family:'Anton', sans-serif;;
+    position: fixed;
+    top: 7.8vh;
+    z-index: 2;
+    background-color: white;
+}
+.table-striped thead tr span img{
+    width: 15px;
+    height: 15px;
+    z-index: -1;
+}
+
+
+#table-body{
+    background-color: transparent;
+}
+
+.table-striped #table-body tr{
+    border: solid white;
+    display: grid;
+    grid-template-columns: 15vw 10vw 10vw 8vw 10vw 8vw 8vw 12vw 3vw;
+    text-align: center;
+    background-color: white;
+}
+
+/* th class option */
+.table-striped #table-body tr .option span{
+    padding: 10px 10px 10px;
+    position: relative;
+    right: 10px;
+}
+
+.table-striped #table-body tr .option span img{
+    z-index: -2;
+}
+
+
+/* TABLA */
+
+/* MENU TABLA CONFIG */
+
+.menu_option {
+    width: fit-content;
+    height: fit-content;
+    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    background: white;
+    box-shadow: -1px -1px 5px 1px black;
+    border: 1px solid;
+}
+.menu_option span{
+    width: 10vw;
+    height: 25px;
+
+    font-size: small;
+    text-align: center;
+
+    border-bottom: 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.menu_option .delete:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.menu_option .fav:hover{
+    background-color: rgb(187, 187, 22);
+    color: white;
+}
+
+.menu_option .sell:hover{
+    background-color: rgb(3, 189, 3);
+    color: white;
+}
+
+.menu_option .waiting:hover{
+    background-color: rgb(4, 195, 243);
+    color: white;
+}
+
+.menu_option .unsold:hover{
+    background-color: rgb(182, 7, 7);
+    color: white;
+}
+
+/* update window */
+
+.update_window{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 30vw;
+    height: 30vh;
+
+    background: rgb(212, 212, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.update_window span{
+    position: relative;
+    width: 100%;
+    background: linear-gradient(rgb(8, 8, 8), rgb(0, 0, 0));
+    height: 20px;
+
+    top: -20px;
+    color: white;
+}
+
+.update_window p{
+    font-family:'Anton', sans-serif;;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
+.update_window input{
+    width: 75%;
+    position: relative;
+    left: 50%;
+    top: -15px;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+}
+.update_window select{
+    width: 75%;
+    position: relative;
+    left: 50%;
+    top: -15px;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+}
+
+.update_window button{
+    width: 75%;
+    position: relative;
+    left: 50%;
+    top: -15px;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+}
+
+
+/* search bar */
+
+#search_bar{
+    background: white;
+    width: 90vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 7.3vh;
+    left: 2.5vw;
+    z-index: 5;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    box-shadow: 3px 3px 10px 1px;
+    overflow-y: scroll;
+}
+#search_bar::-webkit-scrollbar{
+    scroll-behavior: smooth;
+}
+
+
+ /* search bar div1 */
+
+#search_bar .div1{
+    height: 5vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#search_bar .div1 button{
+    height: 2vw;
+    width: 8vw;
+    border-radius: 25px;
+    background-color: rgb(14, 151, 197);
+    color: white;
+}
+
+/* search bar div 3 */
+
+#search_bar .div3{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+#search_bar .div3 div{
+    position: relative;
+    border-bottom: 2px solid;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#search_bar .div3 div span{
+    width: 10vw;
+    text-align: center;
+}
+
+
+
+#search_bar .div2{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: white;
+    border: 5px solid gray;
+    font-family:'Anton', sans-serif;;
+}
+
+#search_bar .div2 span{
+    width: 10vw;
+}
+
+#search_bar .div0{
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+#search_bar .div0 p{
+    font-family:'Anton', sans-serif;
+    font-size: 18px;
+    color: black;
+    position: relative;
+    left: 5px;
+    
+}
+
+#search_bar .div0 button{
+    background: steelblue;
+    color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: -45px;
+    left: 100px;
+}

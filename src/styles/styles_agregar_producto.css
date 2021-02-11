@@ -1,0 +1,56 @@
+body{
+    background-color: silver;
+}
+
+/* h1 */
+
+h1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+    font-family:'Anton', sans-serif;;
+}
+
+/* form */
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    position: absolute;
+    top: 75px;
+}
+form .form-group{
+    width: 250px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+form .form-group select{
+    width: 250px;
+    max-height: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* botones */
+
+.btns{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#agregar{
+    width: 100px;
+}
+#cancel{
+    width: 100px;
+}

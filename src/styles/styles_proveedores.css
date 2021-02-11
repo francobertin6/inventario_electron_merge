@@ -1,0 +1,193 @@
+#body{
+    background: rgb(226, 224, 218);
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+#dropdown_header{
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+
+    height: max-content;
+    width: 100vw;
+    z-index: 3;
+}
+
+/* div en none asi no puede verse */
+#dropdown_header div {
+    display: none;
+}
+
+#dropdown_header div label{
+    margin-top: 10px;
+    position: relative;
+    right: 5vw;
+}
+
+#dropdown_header div input{
+    position: relative;
+    top: -4px;
+    right: 5vw;
+    margin-bottom: 7px;
+}
+
+#dropdown_header div textarea{
+    position: relative;
+    top: -5px;
+    right: 5vw;
+    margin-bottom: 15px;
+}
+
+#dropdown_header div button{
+    position: relative;
+    top: 15px;
+    left: 20vw;
+
+    margin-right: 10px;
+}
+
+/* div dropdown */
+#dropdown_header #dropdown_key{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background:rgb(172, 170, 170) ;
+
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+   
+}
+
+#dropdown_header #dropdown_key:hover{
+    box-shadow: 1px 1px 5px black;
+    color: white;
+}
+
+#dropdown_header #dropdown_key span{
+    position: absolute;
+    left: 37%;
+    top: 25%;
+
+    height: 30px;
+    width: 50vw;
+    font-size: 18px;
+}
+
+/* proveedores cards */
+
+#proveedores_list{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: max-content;
+}
+#proveedores_list .main_div{
+    position: relative;
+    top: 50px;
+    width: 90vw;
+    height: 30vh;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    background-color: rgb(218, 212, 212);
+    box-shadow: 1px 1px 5px black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+#proveedores_list .main_div .nombre_telefono_email{
+    position: absolute;
+    width: 40vw;
+    height: 30vh;
+
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#proveedores_list .main_div .nombre_telefono_email label{
+    position: relative;
+    right: 80px;
+    top: 25px;
+    font-family: 'Overpass', sans-serif;
+    text-align: left;
+    width: 100px;
+}
+
+#proveedores_list .main_div .nombre_telefono_email p{
+    position: relative;
+    left: 5px;
+    top: 20px;
+    text-align: left;
+    width: 275px;
+    height: 25px;
+    background-color: white;
+    box-shadow: -1px -1px 5px black;
+    border: 1px solid black;
+}
+
+
+#proveedores_list .main_div .descripcion{
+    position: absolute;
+    width: 40vw;
+    height: 30vh;
+
+    left: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#proveedores_list .main_div .descripcion label{
+    position: relative;
+    top: 5%;
+    font-family: 'Overpass', sans-serif;
+    text-align: left;
+    width: 100px;
+}
+
+#proveedores_list .main_div .descripcion p{
+    position: relative;
+    top: 7%;
+
+    width: 42vw;
+
+    height: 18vh;
+    background-color: white;
+    box-shadow: -1px -1px 5px black;
+    border: 1px solid black;
+
+    text-justify: distribute-all-lines;
+    text-align: justify;
+}
+
+/* delete btn */
+#proveedores_list .main_div .descripcion button{
+    position: absolute;
+    top: 87%;
+    left: 70%;
+}
+#proveedores_list .main_div .descripcion button:hover{
+    box-shadow: 1px 1px 5px black;
+}
+

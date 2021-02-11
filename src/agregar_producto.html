@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/photon.min.css">
+    <link rel="stylesheet" href="styles/styles_agregar_producto.css">
+    <!-- fuentes de texto -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>agregar producto</title>
+</head>
+<body>
+
+    <h1>Agregar producto</h1>
+
+    <form>
+        <div class="form-group">
+            <label for="nombre">Nombre</label> <br>
+            <input type="text" class="form-control" id="nombre" name="nombre">
+        </div>
+        <div class="form-group">
+            <label for="tipo">Tipo</label> <br>
+            <input type="text" class="form-control" id="tipo" name="tipo">
+        </div>
+        <div class="form-group">
+            <label for="color">Color</label> <br>
+            <input type="text" class="form-control" id="color" name="color">
+        </div>
+        <div class="form-group">
+            <label for="cantidad">Cantidad</label> <br>
+            <input type="number" class="form-control" id="cantidad" name="cantidad">
+        </div>
+        <div class="form-group">
+            <label for="medida">Medida</label> <br>
+            <input type="text" class="form-control" id="medida" name="medida">
+        </div>
+        <div class="form-group">
+            <label for="costo_unitario">Costo unitario</label>
+            <input type="number" class="form-control" id="costo_unitario" name="costo_unitario">
+        </div>
+        <div class="form-group">
+            <label for="proveedor">Proveedor</label> <br>
+            <select name="proveedor" id="proveedor">
+                
+            </select>
+        </div>
+    </form>
+
+    <div class="btns">
+        <button class="btn btn-large btn-positive" id="agregar">Agregar</button>
+        <button class="btn btn-large btn-default" id="cancel">Listo</button>
+    </div>
+
+
+    <script type="module">
+        require('./modulos_export_app/productos_post.js');
+    </script>
+   
+</body>
+</html>
